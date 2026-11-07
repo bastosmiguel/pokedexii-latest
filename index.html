@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédexii</title>
+    <link rel="icon" type="image/png" href="./source/images/pokeball.png">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Press+Start+2P&family=Tiny5&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <p>Pokédexii <img id="icone-pokebola" src="./source/images/pokeball.png"></p>
+</header>
+
+    <div id="pokedex">
+        <div id="mensagem-erro"></div>
+            <div id="imagens">
+                <div><img id="img-normal-pokemon" class="imagem-pokemon" alt="Pokémon Normal"></div>
+                <div><img id="img-shiny-pokemon" class="imagem-pokemon" alt="Pokémon Shiny"></div>
+            </div>
+        <div id="pesquisa">
+            <span id="pokemon-numero"></span>
+            <div id= "div-input">
+                <input type="text" id="campo-pesquisa" class="input-nome" placeholder="Número ou nome do Pokémon">
+                <div id="lista-sugestoes"></div>
+            </div>
+            <button id="botao-pesquisa">Pesquisar</button>
+        </div>
+
+        <div id="div-info">    
+            <div id="informacoes">
+                <div id="div-nome">Nome: <span id="pokemon-nome"></span></div>
+                <div>Tipagem: <span id="pokemon-tipagem"></span></div>
+                <div>Peso: <span id="pokemon-peso"></span></div>
+                <div>Altura: <span id="pokemon-altura"></span></div>
+                <div>Região: <span id="pokemon-regiao"></span></div>
+            </div>
+
+        <div id="div-teclado-numerico"> 
+            <button id="botao-um" class="botao-numerico">1</button>
+            <button id="botao-dois" class="botao-numerico">2</button>
+            <button id="botao-tres" class="botao-numerico">3</button>
+            <button id="botao-quatro" class="botao-numerico">4</button>
+            <button id="botao-cinco" class="botao-numerico">5</button>
+            <button id="botao-delete" class="botao-numerico"><img src="./source/images/delete.png"></button>
+            <button id="botao-seis" class="botao-numerico">6</button>
+            <button id="botao-sete" class="botao-numerico">7</button>
+            <button id="botao-oito" class="botao-numerico">8</button>
+            <button id="botao-nove" class="botao-numerico">9</button>
+            <button id="botao-zero" class="botao-numerico">0</button>
+            <button id="botao-apagar-tudo" class="botao-numerico"><img src="./source/images/delete-all.png"></button>
+            </div>
+
+            <div id="stats">
+                <h3>Stats:</h3>
+                <ul id="lista-stats"></ul>
+            </div>
+
+        </div>
+
+        <div id="navegacao">
+            <button id="botao-voltar-dez"><<</button>
+            <button id="botao-anterior"><img src="./source/images/arrowleft.png"></button>
+            <button id="botao-proximo"><img src="./source/images/arrowright.png"></button>
+            <button id="botao-avancar-dez">>></button>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+<footer>
+    <p>&copy; Copyright 2026 - Miguel de Bastos | 2026</p>
+</footer>
+
+</body>
+</html>
